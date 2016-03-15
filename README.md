@@ -24,11 +24,10 @@ Pre-Prod (UAT/QA/DEV)
 
 ##Environment variables
 
--Set folllowing environment variables:
-```
-set AWS_ACCESS_KEY_ID=<you access key>
-set AWS_SECRET_ACCESS_KEY=<you secret key>
-```
+* Set folllowing environment variables:
+>set AWS_ACCESS_KEY_ID=<you access key>
+>set AWS_SECRET_ACCESS_KEY=<you secret key>
+
 
 ##Example file upload
 
