@@ -55,7 +55,7 @@ set AWS_SECRET_ACCESS_KEY=<you secret key>
 ##Example file upload (Reduced Redundancy storage + Public)
 
 
-* S3_RR_Public_upload.bat > resutl.log
+* S3_RR_Public_upload.bat
 ```
 set AWS_ACCESS_KEY_ID=<you access key>
 set AWS_SECRET_ACCESS_KEY=<you secret key>
@@ -64,7 +64,7 @@ cd c:\tmp\S3_Uploader
 s3_percent_upload.exe c:\tmp\data.zip test123 --use_rr -public
 
 ```
-* resutl.log
+* resutl.log (S3_RR_Public_upload.bat > resutl.log)
 ```
 Connecting to S3...
 File size: 388.5KiB
