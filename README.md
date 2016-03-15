@@ -12,8 +12,8 @@ Windows|64bit|[0.1.0 beta]
 
 - Ad-hoc file upload to AWS S3.
 - Optional upload to Reduced Redundancy storage (not RR by default).
-- Optional public after upload (private by default)
-- Custom S3 Key (defaulted to file name)
+- Optional "make it public" after upload (private by default)
+- Custom S3 Key (defaulted to transfer file name)
 
 ##Audience
 
