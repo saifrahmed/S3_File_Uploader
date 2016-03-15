@@ -1,5 +1,5 @@
 # S3 File Uploader
-Basic S3 uploader you would use from your windows CLI.
+Basic S3 uploader to use from Windows CLI.
 Displays upload % progress in CLI screen.
 
 ##Version
