@@ -25,6 +25,12 @@ Business Analysts, AWS Developers, DevOps,
 ##Designated Environment
 Pre-Prod (UAT/QA/DEV)
 
+## Amazon S3 data upload price
+
+>Cost to you: free
+>in any region
+
+
 ##Usage
 
 ```
