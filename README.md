@@ -53,7 +53,7 @@ set AWS_SECRET_ACCESS_KEY=<you secret key>
 ##Example file upload (Reduced Redundancy storage + Public)
 
 
-* S3_RR_Public_upload.bat
+* S3_RR_Public_upload.bat > resutl.log
 ```
 set AWS_ACCESS_KEY_ID=<you access key>
 set AWS_SECRET_ACCESS_KEY=<you secret key>
