@@ -45,7 +45,7 @@ Usage:
 
 ##Environment variables
 
-* Set folllowing environment variables:
+* Set the following environment variables:
 
 ```
 set AWS_ACCESS_KEY_ID=<you access key>
