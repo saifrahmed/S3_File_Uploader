@@ -1,5 +1,5 @@
 # S3 File Uploader
-Basic `local file to S3` uploader to use from Windows CLI.
+Basic `local file to Amazon-S3` uploader to use from Windows CLI.
 
 Logs upload % progress to CLI screen.
 
@@ -13,7 +13,7 @@ Windows|64bit|[0.1.0 beta]
 
 ##Purpose
 
-- Ad-hoc file upload to AWS S3.
+- Ad-hoc file upload to Amazon S3.
 - Optional upload to Reduced Redundancy storage (not RR by default).
 - Optional "make it public" after upload (private by default)
 - Custom S3 Key (defaulted to transfer file name)
