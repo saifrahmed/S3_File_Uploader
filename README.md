@@ -22,6 +22,25 @@ Business Analysts, AWS Developers, DevOps,
 ##Designated Environment
 Pre-Prod (UAT/QA/DEV)
 
+##Usage
+
+```
+## Upload file to S3.
+##
+## Upload % progress outputs to the screen.
+##
+Usage:
+  set AWS_ACCESS_KEY_ID=<you access key>
+  set AWS_SECRET_ACCESS_KEY=<you secret key>
+  s3_percent_upload.py <file_to_transfer> <bucket_name> [<s3_key_name>] [<use_rr>] [<public>]
+        if <s3_key_name> is not specified, the filename will be used.
+        --use_rr -- Use reduced redundancy storage.
+        --public -- Make uploaded files public.
+
+        Boto S3 docs: http://boto.cloudhackers.com/en/latest/ref/s3.html
+
+```
+
 ##Environment variables
 
 * Set folllowing environment variables:
