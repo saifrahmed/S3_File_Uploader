@@ -1,9 +1,14 @@
 # S3 File Uploader
-Basic `local file to Amazon-S3` uploader to use from Windows CLI.
+Basic Windows (local) file to Amazon-S3 uploader.
 
-Logs upload % progress to CLI screen.
-
-Written using Python/boto/PyInstaller
+Features:
+ - No need for Amazon CLI
+ - Works from your OS Windows desktop CLI (command line)
+ - Logs upload % progress to CLI screen.
+ - It's executable (s3_percent_upload.exe)  - no need for Python install
+ - It's 32 bit - will Work on any vanilla Windows.
+ - Access keys are fed from CLI environment (not command line args)
+ - Written using Python/boto/PyInstaller
 
 ##Version
 
@@ -41,7 +46,7 @@ Pre-Prod (UAT/QA/DEV)
 Usage:
   set AWS_ACCESS_KEY_ID=<you access key>
   set AWS_SECRET_ACCESS_KEY=<you secret key>
-  s3_percent_upload.py <file_to_transfer> <bucket_name> [<s3_key_name>] [<use_rr>] [<public>]
+  s3_percent_upload.exe <file_to_transfer> <bucket_name> [<s3_key_name>] [<use_rr>] [<public>]
         if <s3_key_name> is not specified, the filename will be used.
         --use_rr -- Use reduced redundancy storage.
         --public -- Make uploaded files public.
