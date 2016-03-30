@@ -6,7 +6,7 @@ Features:
  - Works from your OS Windows desktop (command line)
  - Logs upload % progress to CLI screen.
  - It's executable (s3_percent_upload.exe)  - no need for Python install
- - It's 32 bit - will Work on any vanilla Windows.
+ - It's 32 bit - it will work on any vanilla Windows.
  - Access keys are fed from CLI environment (not command line args)
  - Written using Python/boto/PyInstaller
 
