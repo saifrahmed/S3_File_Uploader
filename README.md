@@ -1,4 +1,4 @@
-# S3 File Uploader
+# S3 File Uploader for Windows CLI.
 Basic Windows (local) file to Amazon-S3 uploader.
 
 Features:
