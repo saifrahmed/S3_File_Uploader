@@ -32,8 +32,8 @@ Pre-Prod (UAT/QA/DEV)
 
 ## Amazon S3 data upload price
 
->Cost to you: free
->in any region
+ - It's free to upload file to Amazon S3.
+ - Storage will cost you.
 
 
 ##Usage
@@ -64,7 +64,9 @@ set AWS_ACCESS_KEY_ID=<you access key>
 set AWS_SECRET_ACCESS_KEY=<you secret key>
 ```
 
-##Example file upload (Reduced Redundancy storage + Public)
+#Example 
+
+##Upload file to Amazon-S3 Reduced Redundancy storage and make in Publicly accessible
 
 
 * S3_RR_Public_upload.bat
