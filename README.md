@@ -1,5 +1,5 @@
 # S3 File Uploader for Windows CLI.
-Basic Windows (local) file to Amazon-S3 uploader.
+Basic *file to Amazon-S3* uploader.
 
 Features:
  - No need for Amazon AWS CLI
