@@ -2,7 +2,7 @@
 Basic Windows (local) file to Amazon-S3 uploader.
 
 Features:
- - No need for Amazon CLI
+ - No need for Amazon AWS CLI
  - Works from your OS Windows desktop CLI (command line)
  - Logs upload % progress to CLI screen.
  - It's executable (s3_percent_upload.exe)  - no need for Python install
