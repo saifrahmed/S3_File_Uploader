@@ -34,11 +34,19 @@
         <h1>
 <a id="s3-file-uploader" class="anchor" href="#s3-file-uploader" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>S3 File Uploader</h1>
 
-<p>Basic <code>local file to Amazon-S3</code> uploader to use from Windows CLI.</p>
+<p>Basic Windows (local) file to Amazon-S3 uploader.</p>
 
-<p>Logs upload % progress to CLI screen.</p>
+<p>Features:</p>
 
-<p>Written using Python/boto/PyInstaller</p>
+<ul>
+<li>No need for Amazon AWS CLI</li>
+<li>Works from your OS Windows desktop (command line)</li>
+<li>Logs upload % progress to CLI screen.</li>
+<li>It's executable (s3_percent_upload.exe)  - no need for Python install</li>
+<li>It's 32 bit - it will work on any vanilla Windows.</li>
+<li>Access keys are fed from CLI environment (not command line args)</li>
+<li>Written using Python/boto/PyInstaller</li>
+</ul>
 
 <h2>
 <a id="version" class="anchor" href="#version" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version</h2>
@@ -98,7 +106,7 @@ in any region</p>
 Usage:
   set AWS_ACCESS_KEY_ID=&lt;you access key&gt;
   set AWS_SECRET_ACCESS_KEY=&lt;you secret key&gt;
-  s3_percent_upload.py &lt;file_to_transfer&gt; &lt;bucket_name&gt; [&lt;s3_key_name&gt;] [&lt;use_rr&gt;] [&lt;public&gt;]
+  s3_percent_upload.exe &lt;file_to_transfer&gt; &lt;bucket_name&gt; [&lt;s3_key_name&gt;] [&lt;use_rr&gt;] [&lt;public&gt;]
         if &lt;s3_key_name&gt; is not specified, the filename will be used.
         --use_rr -- Use reduced redundancy storage.
         --public -- Make uploaded files public.
