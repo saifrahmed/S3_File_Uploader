@@ -1,9 +1,15 @@
-# S3 File Uploader
-Basic `local file to Amazon-S3` uploader to use from Windows CLI.
+# S3 File Uploader for Windows CLI.
+    Ground to cloud data integration tool.
+    Basic *file to Amazon-S3* uploader.
 
-Logs upload % progress to CLI screen.
-
-Written using Python/boto/PyInstaller
+Features:
+ - No need for Amazon AWS CLI
+ - Works from your OS Windows desktop (command line)
+ - Logs upload % progress to CLI screen.
+ - It's executable (s3_percent_upload.exe)  - no need for Python install
+ - It's 32 bit - it will work on any vanilla Windows.
+ - Access keys are fed from CLI environment (not command line args)
+ - Written using Python/boto/PyInstaller
 
 ##Version
 
@@ -25,6 +31,12 @@ Business Analysts, AWS Developers, DevOps,
 ##Designated Environment
 Pre-Prod (UAT/QA/DEV)
 
+## Amazon S3 data upload price
+
+ - It's free to upload file to Amazon S3.
+ - Storage will cost you.
+
+
 ##Usage
 
 ```
@@ -35,7 +47,7 @@ Pre-Prod (UAT/QA/DEV)
 Usage:
   set AWS_ACCESS_KEY_ID=<you access key>
   set AWS_SECRET_ACCESS_KEY=<you secret key>
-  s3_percent_upload.py <file_to_transfer> <bucket_name> [<s3_key_name>] [<use_rr>] [<public>]
+  s3_percent_upload.exe <file_to_transfer> <bucket_name> [<s3_key_name>] [<use_rr>] [<public>]
         if <s3_key_name> is not specified, the filename will be used.
         --use_rr -- Use reduced redundancy storage.
         --public -- Make uploaded files public.
@@ -53,10 +65,11 @@ set AWS_ACCESS_KEY_ID=<you access key>
 set AWS_SECRET_ACCESS_KEY=<you secret key>
 ```
 
-##Example file upload (Reduced Redundancy storage + Public)
+#Example 
+
+####Upload file to Amazon-S3 Reduced Redundancy storage and make in Publicly accessible
 
 
-* S3_RR_Public_upload.bat
 ```
 set AWS_ACCESS_KEY_ID=<you access key>
 set AWS_SECRET_ACCESS_KEY=<you secret key>
@@ -65,33 +78,38 @@ cd c:\tmp\S3_Uploader
 s3_percent_upload.exe c:\tmp\data.zip test123 --use_rr -public
 
 ```
-* resutl.log (S3_RR_Public_upload.bat > resutl.log)
+####Result
 ```
+c:\Python35-32\PROJECTS\s3>..\\..\\python s3_percent_upload.py C:\Users\alex_buz\Downloads\instantclient-sqlplus-windows.x64-12.1.0.2.0\instantclient_12_1.zip test1 -r -p
 Connecting to S3...
-File size: 388.5KiB
+File size: 185.2MiB
 Public = True
 ReducedRedundancy = True
-Uploaded 0 bytes of 397799 (0%)
-Uploaded 24576 bytes of 397799 (6%)
-Uploaded 49152 bytes of 397799 (12%)
-Uploaded 73728 bytes of 397799 (18%)
-Uploaded 98304 bytes of 397799 (24%)
-Uploaded 122880 bytes of 397799 (30%)
-Uploaded 147456 bytes of 397799 (37%)
-Uploaded 172032 bytes of 397799 (43%)
-Uploaded 196608 bytes of 397799 (49%)
-Uploaded 221184 bytes of 397799 (55%)
-Uploaded 245760 bytes of 397799 (61%)
-Uploaded 270336 bytes of 397799 (67%)
-Uploaded 294912 bytes of 397799 (74%)
-Uploaded 319488 bytes of 397799 (80%)
-Uploaded 344064 bytes of 397799 (86%)
-Uploaded 368640 bytes of 397799 (92%)
-Uploaded 393216 bytes of 397799 (98%)
+Uploaded 0 bytes of 194152955 (0%)
+Uploaded 10223616 bytes of 194152955 (5%)
+Uploaded 20447232 bytes of 194152955 (10%)
+Uploaded 30670848 bytes of 194152955 (15%)
+Uploaded 40894464 bytes of 194152955 (21%)
+Uploaded 51118080 bytes of 194152955 (26%)
+Uploaded 61341696 bytes of 194152955 (31%)
+Uploaded 71565312 bytes of 194152955 (36%)
+Uploaded 81788928 bytes of 194152955 (42%)
+Uploaded 92012544 bytes of 194152955 (47%)
+Uploaded 102236160 bytes of 194152955 (52%)
+Uploaded 112459776 bytes of 194152955 (57%)
+Uploaded 122683392 bytes of 194152955 (63%)
+Uploaded 132907008 bytes of 194152955 (68%)
+Uploaded 143130624 bytes of 194152955 (73%)
+Uploaded 153354240 bytes of 194152955 (78%)
+Uploaded 163577856 bytes of 194152955 (84%)
+Uploaded 173801472 bytes of 194152955 (89%)
+Uploaded 184025088 bytes of 194152955 (94%)
+Uploaded 194152955 bytes of 194152955 (100%)
 Upload complete.
-Your file is at: https://s3-website-us-west-2.amazonaws.com/test123/data.zip
+Your file is at: https://s3-website-us-west-2.amazonaws.com/test1/instantclient_12_1.zip
 
-Time elapsed: 2.54299998283 seconds
+Time elapsed: 538.1886253356934 seconds
+
 
 ```
 
